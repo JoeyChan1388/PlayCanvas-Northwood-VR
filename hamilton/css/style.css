@@ -1,0 +1,186 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -ms-content-zooming: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+}
+
+button, input, select, textarea {
+  font-family: 'Mulish', sans-serif;
+}
+
+#pano {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#panorama {
+  width: 100vw;
+  height: 100%;
+}
+
+.main-wrapper {
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.view-wrapper {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  resize: horizontal;
+  float: left;
+}
+
+.logo_link {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  top: 2%;
+  left: 1%;
+}
+
+.logo {
+  position: relative;
+  width: 250px;
+}
+
+
+/* The Modal (background) */
+.modal-contact {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 8; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+.modal_contact_div {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  color: #000;
+  border: 3px solid #C1CD23;
+  width: 50%;
+  min-height: 60%;
+  height: fit-content;
+  overflow: auto;
+  border-radius: 10px;
+  z-index: 99;
+}
+
+.modal_contact_div_field {
+  width: 100%;
+  height: fit-content;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+}
+
+.modal_contact_div_field > p {
+  margin: 8px 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.modal_contact_div_field > textarea {
+  width: 100%;
+  height: fit-content;
+  border: none;
+  border: 1px solid #888;
+  padding: 1em;
+  font-size: 16px;
+  resize: none;
+}
+
+#sidebar{
+  right: 0;
+  float: right;
+  height:100%;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+}
+
+#resizable {
+  width: 150px;
+  height: 100%;
+  padding: 0.5em;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  position: absolute;
+  resize: horizontal
+}
+
+#ghostbar{
+  width:3px;
+  right: 0;
+  background-color:#000;
+  opacity:0.5;
+  position:absolute;
+  cursor: col-resize;
+  z-index:999
+}
+
+#floating_text {
+  width: max-content;
+  font-size: 14px;
+  white-space: nowrap;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  padding: 2px 4px;
+  border-radius: 5px;
+  border: 3px #C1CD23 solid;
+  font-weight: 400;
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  display: hidden;
+}
+
+@media only screen and (max-width: 840px) {
+  .logo {
+    width: 30vw;
+  }
+  .modal_contact_div {
+    width: 80%;
+  }
+}
